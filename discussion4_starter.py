@@ -59,7 +59,7 @@ class Rectangle():
         else:
             return "Invalid input"
     
-
+#main
 def main():
     r = Rectangle(10, 10)
     print(r)
