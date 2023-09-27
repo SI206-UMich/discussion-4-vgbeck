@@ -40,7 +40,11 @@ class Rectangle():
     # It first verifies inputs and return "Invalid input" if they are invalid.
     # Otherwise, it returns the area of the rectangle.
 
-    # YOUR CODE HERE
+    def area(self):
+        if self.verify_input():
+            return self.width * self.height
+        else:
+            return "Invalid input"
 
 
 
@@ -49,9 +53,12 @@ class Rectangle():
     # It first verifies inputs and return "Invalid input" if they are invalid.
     # Otherwise, it returns the perimeter of the rectangle.
 
-    # YOUR CODE HERE
+    def perimeter(self):
+        if self.verify_input():
+            return 2 * self.width + 2 * self.height
+        else:
+            return "Invalid input"
     
-
 
 def main():
     r = Rectangle(10, 10)
